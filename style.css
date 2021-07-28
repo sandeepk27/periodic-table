@@ -1,0 +1,125 @@
+body {
+    background-color: #ecf0f3;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    table-layout: fixed;
+    width: 1650px;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+td:hover {
+    transform: scale(2);
+    transition: .6s;
+}
+
+.elements {
+    display: none;
+}
+
+#inputDiv {
+    z-index: 2;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 5px;
+}
+
+#inputNum {
+    width: 40px;
+    margin-right: 3px;
+}
+
+#canvas {
+    z-index: 0;
+    position: relative;
+    top: -17px;
+    width: 97%;
+    height: 97%;
+    left: 2px;
+}
+
+.confg {
+    display: none;
+    background-color: #ecf0f3;
+}
+
+.back {
+    background-color: #ecf0f3;
+    box-shadow: -8px -4px 8px 0px #fff, 8px 4px 12px 0px #d1d9eb;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.do {
+    background-color: #ecf0f3;
+    box-shadow: -8px -4px 8px 0px #fff, 8px 4px 12px 0px #d1d9eb;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25em;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 300px;
+    height: 470px;
+    margin-top: 2em;
+    box-shadow: -8px -4px 8px 0px #fff, 8px 4px 12px 0px #d1d9eb;
+}
+
+.front,
+.bac {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform 1s linear;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.bac {
+    background-color: white;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.bac {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.bac-content {
+    margin: 0;
+    padding: 0;
+}

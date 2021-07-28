@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Periodic Table</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <table class="tab">
+        <tr>
+            <th align="center" colspan="18">
+                <font size="16"><u>Periodic Table</u></font>
+            </th>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#FFFF66">
+                <sup>1</sup><br/><a href="#" title="Hydrogen">H</a><br/><sub>Hydrogen</sub>
+            </td>
+
+            <td colspan="16" align="center"></td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>2</sup><br/><a href="#" title="Helium">He</a><br/><sub>Helium</sub>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td align="center" bgcolor="#CCCC00">
+                <sup>3</sup><br/><a href="#" title="Lithium">Li</a><br/><sub>Lithium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFB266">
+                <sup>4</sup><br/><a href="#" title="Beryllium">Be</a><br/><sub>Beryllium</sub>
+            </td>
+
+            <td colspan="10"></td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>5</sup><br/><a href="#" title="Boron">B</a><br/><sub>Boron</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFFF66">
+                <sup>6</sup><br/><a href="#" title="Carbon">C</a><br/><sub>Carbon</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFFF66">
+                <sup>7</sup><br/><a href="#" title="Nitrogen">N</a><br/><sub>Nitrogen</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFFF66">
+                <sup>8</sup><br/><a href="#" title="Oxygen">O</a><br/><sub>Oxygen</sub>
+            </td>
+
+            <td align="center" bgcolor="#3399FF">
+                <sup>9</sup><br/><a href="#" title="Fluorine">F</a><br/><sub>Fluorine</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>10</sup><br/><a href="#" title="Neon">Ne</a><br/><sub>Neon</sub>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td align="center" bgcolor="#CCCC00">
+                <sup>11</sup><br/><a href="#" title="Sodium">Na</a><br/><sub>Sodium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFB266">
+                <sup>12</sup><br/><a href="#" title="Magnesium">Mg</a><br/><sub>Magnesium</sub>
+            </td>
+
+            <td colspan="10"></td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>13</sup><br/><a href="#" title="Aluminium">Al</a><br/><sub>Aluminium</sub>
+            </td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>14</sup><br/><a href="#" title="Silicon">Si</a><br/><sub>Silicon</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFFF66">
+                <sup>15</sup><br/><a href="#" title="Phosphorus">P</a><br/><sub>Phosphorus</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFFF66">
+                <sup>16</sup><br/><a href="#" title="Sulphur">S</a><br/><sub>Sulphur</sub>
+            </td>
+
+            <td align="center" bgcolor="#3399FF">
+                <sup>17</sup><br/><a href="#" title="Chlorine">Cl</a><br/><sub>Chlorine</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>18</sup><br/><a href="#" title="Argon">Ar</a><br/><sub>Argon</sub>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td align="center" bgcolor="#CCCC00">
+                <sup>19</sup><br/><a href="#" title="Potassium">K</a><br/><sub>Potassium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFB266">
+                <sup>20</sup><br/><a href="#" title="Calcium">Ca</a><br/><sub>Calcium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>21</sup><br/><a href="#" title="Scandium">Sc</a><br/><sub>Scandium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>22</sup><br/><a href="#" title="Titanium">Ti</a><br/><sub>Titanium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>23</sup><br/><a href="#" title="Vanadium">V</a><br/><sub>Vanadium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>24</sup><br/><a href="#" title="Chromium">Cr</a><br/><sub>Chromium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>25</sup><br/><a href="#" title="Manganese">Mn</a><br/><sub>Manganese</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>26</sup><br/><a href="#" title="Iron">Fe</a><br/><sub>Iron</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>27</sup><br/><a href="#" title="Cobalt">Co</a><br/><sub>Cobalt</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>28</sup><br/><a href="#" title="Nickel">Ni</a><br/><sub>Nickel</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>29</sup><br/><a href="#" title="Copper">Cu</a><br/><sub>Copper</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>30</sup><br/><a href="#" title="Zinc">Zn</a><br/><sub>Zinc</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>31</sup><br/><a href="#" title="Gallium">Ga</a><br/><sub>Gallium</sub>
+            </td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>32</sup><br/><a href="#" title="Germanium">Ge</a><br/><sub>Germanium</sub>
+            </td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>33</sup><br/><a href="#" title="Arsenic">As</a><br/><sub>Arsenic</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFFF66">
+                <sup>34</sup><br/><a href="#" title="Selenium">Se</a><br/><sub>Selenium</sub>
+            </td>
+
+            <td align="center" bgcolor="#3399FF">
+                <sup>35</sup><br/><a href="#" title="Bromine">Br</a><br/><sub>Bromine</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>36</sup><br/><a href="#" title="Krypton">Kr</a><br/><sub>Krypton</sub>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td align="center" bgcolor="#CCCC00">
+                <sup>37</sup><br/><a href="#" title="Rubidium">Rb</a><br/><sub>Rubidium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFB266">
+                <sup>38</sup><br/><a href="#" title="Strontium">Sr</a><br/><sub>Strontium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>39</sup><br/><a href="#" title="Yttrium">Y</a><br/><sub>Yttrium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>40</sup><br/><a href="#" title="Zirconium">Zr</a><br/><sub>Zirconium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>41</sup><br/><a href="#" title="Niobium">Nb</a><br/><sub>Niobium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>42</sup><br/><a href="#" title="Molybdenum">Mo</a><br/><sub>Molybdenum</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>43</sup><br/><a href="#" title="Technetium">Tc</a><br/><sub>Technetium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>44</sup><br/><a href="#" title="Ruthenium">Ru</a><br/><sub>Ruthenium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>45</sup><br/><a href="#" title="Rhodium">Rh</a><br/><sub>Rhodium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>46</sup><br/><a href="#" title="Palladium">Pd</a><br/><sub>Palladium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>47</sup><br/><a href="#" title="Silver">Ag</a><br/><sub>Silver</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>48</sup><br/><a href="#" title="Cadmium">Cd</a><br/><sub>Cadmium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>49</sup><br/><a href="#" title="Indium">In</a><br/><sub>Indium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>50</sup><br/><a href="#" title="Tin">Sn</a><br/><sub>Tin</sub>
+            </td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>51</sup><br/><a href="#" title="Antimony">Sb</a><br/><sub>Antimony</sub>
+            </td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>52</sup><br/><a href="#" title="Tellurium">Te</a><br/><sub>Tellurium</sub>
+            </td>
+
+            <td align="center" bgcolor="#3399FF">
+                <sup>53</sup><br/><a href="#" title="Iodine">I</a><br/><sub>Iodine</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>54</sup><br/><a href="#" title="Xenon">Xe</a><br/><sub>Xenon</sub>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td align="center" bgcolor="#CCCC00">
+                <sup>55</sup><br/><a href="#" title="Caesium">Cs</a><br/><sub>Caesium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFB266">
+                <sup>56</sup><br/><a href="#" title="Barium">Ba</a><br/><sub>Barium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>57</sup><br/><a href="#" title="Lanthanum">La</a><br/><sub>Lanthanum</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>72</sup><br/><a href="#" title="Hafnium">Hf</a><br/><sub>Hafnium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>73</sup><br/><a href="#" title="Tantalum">Ta</a><br/><sub>Tantalum</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>74</sup><br/><a href="#" title="Tungsten">W</a><br/><sub>Tungsten</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>75</sup><br/><a href="#" title="Rhenium">Re</a><br/><sub>Rhenium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>76</sup><br/><a href="#" title="Osmium">Os</a><br/><sub>Osmium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>77</sup><br/><a href="#" title="Iridium">Ir</a><br/><sub>Iridium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>78</sup><br/><a href="#" title="Platinum">Pt</a><br/><sub>Platinum</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>79</sup><br/><a href="#" title="Aurum">Au</a><br/><sub>Gold</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>80</sup><br/><a href="#" title="Quicksilver">Hg</a><br/><sub>Mercury</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>81</sup><br/><a href="#" title="Thallium">Tl</a><br/><sub>Thallium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>82</sup><br/><a href="#" title="Lead">Pb</a><br/><sub>Lead</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>83</sup><br/><a href="#" title="Bismuth">Bi</a><br/><sub>Bismuth</sub>
+            </td>
+
+            <td align="center" bgcolor="#A0A0A0">
+                <sup>84</sup><br/><a href="#" title="Polonium">Po</a><br/><sub>Polonium</sub>
+            </td>
+
+            <td align="center" bgcolor="#3399FF">
+                <sup>85</sup><br/><a href="#" title="Astatine">At</a><br/><sub>Astatine</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>86</sup><br/><a href="#" title="Radon">Rn</a><br/><sub>Radon</sub>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td align="center" bgcolor="#CCCC00">
+                <sup>87</sup><br/><a href="#" title="Francium">Fr</a><br/><sub>Francium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FFB266">
+                <sup>88</sup><br/><a href="#" title="Radium">Ra</a><br/><sub>Radium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>89</sup><br/><a href="#" title="Actinium">Ac</a><br/><sub>Actinium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>104</sup><br/><a href="#" title="Rutherfordium">Rf</a><br/><sub>Rutherfordium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>105</sup><br/><a href="#" title="Dubnium">Db</a><br/><sub>Dubnium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>106</sup><br/><a href="#" title="Seaborgium">Sb</a><br/><sub>Seaborgium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>107</sup><br/><a href="#" title="Bohrium">Bh</a><br/><sub>Bohrium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>108</sup><br/><a href="#" title="Hassium">Hs</a><br/><sub>Hassium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>109</sup><br/><a href="#" title="Meitnerium">Mt</a><br/><sub>Meitnerium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>110</sup><br/><a href="#" title="Darmstadtium">Dms</a><br/><sub>Darmstadtium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>111</sup><br/><a href="#" title="Roentgenium">Rg</a><br/><sub>Roentgenium</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF99FF">
+                <sup>112</sup><br/><a href="#" title="Copernicium">Cn</a><br/><sub>Copernicium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>113</sup><br/><a href="#" title="Nihonium">Nh</a><br/><sub>Nihonium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>114</sup><br/><a href="#" title="Flerovium">Fl</a><br/><sub>Flerovium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>115</sup><br/><a href="#" title="Moscovium">Mc</a><br/><sub>Moscovium</sub>
+            </td>
+
+            <td align="center" bgcolor="#99CCFF">
+                <sup>116</sup><br/><a href="#" title="Livermorium">Lv</a><br/><sub>Ununhexium</sub>
+            </td>
+
+            <td align="center" bgcolor="#3399FF">
+                <sup>117</sup><br/><a href="#" title="Tennessine">Ts</a><br/><sub>Tennessine</sub>
+            </td>
+
+            <td align="center" bgcolor="#FF007F">
+                <sup>118</sup><br/><a href="#" title="Oganesson">Og</a><br/><sub>Oganesson</sub>
+
+                <td align="center" bgcolor="#FFB266">
+                    <sup>118</sup><br/><a href="#" title="Ununonium">E</a><br/><sub>Newtonium</sub>
+                </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="18"><br/></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center" bgcolor="#66FFB2">Lanthanide series</td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>58</sup><br/><a href="#" target="_blank" title="Cerium">Ce</a><br/><sub>Cerium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>59</sup><br/><a href="#" title="Praseodymium">Pr</a><br/><sub>Praseodymium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>60</sup><br/><a href="#" title="Neodymium">Nd</a><br/><sub>Neodymium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>61</sup><br/><a href="#" title="Promethium">Pm</a><br/><sub>Promethium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>62</sup><br/><a href="#" title="Samarium">Sm</a><br/><sub>Samarium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>63</sup><br/><a href="#" title="Europium">Eu</a><br/><sub>Europium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>64</sup><br/><a href="#" title="Gadolinium">Gd</a><br/><sub>Gadolinium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>65</sup><br/><a href="#" title="Terbium">Tb</a><br/><sub>Terbium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>66</sup><br/><a href="#" title="Dysprosium">Dy</a><br/><sub>Dysprosium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>67</sup><br/><a href="#" title="Holmium">Ho</a><br/><sub>Holmium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>68</sup><br/><a href="#" title="Erbium">Er</a><br/><sub>Erbium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>69</sup><br/><a href="#" title="Thulium">Tm</a><br/><sub>Thulium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>70</sup><br/><a href="#" title="Ytterbium">Yb</a><br/><sub>Ytterbium</sub>
+            </td>
+
+            <td align="center" bgcolor="#66FFB2">
+                <sup>71</sup><br/><a href="#" title="Lutetium">Lu</a><br/><sub>Lutetium</sub>
+            </td>
+
+            <td colspan="2"></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center" bgcolor="#00994C">Actinide series</td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>90</sup><br/><a href="#" title="Thorium">Th</a><br/><sub>Thorium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>91</sup><br/><a href="#" title="Protactinium">Pa</a><br/><sub>Protactinium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>92</sup><br/><a href="#" title="Uranium">U</a><br/><sub>Uranium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>93</sup><br/><a href="#" title="Neptunium">Np</a><br/><sub>Neptunium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>94</sup><br/><a href="#" title="Plutonium">Pu</a><br/><sub>Plutonium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>95</sup><br/><a href="#" title="Americium">Am</a><br/><sub>Americium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>96</sup><br/><a href="#" title="Curium">Cm</a><br/><sub>Curium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>97</sup><br/><a href="#" title="Berkelium">Bk</a><br/><sub>Berkelium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>98</sup><br/><a href="#" title="Californium">Cf</a><br/><sub>Californium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>99</sup><br/><a href="#" title="Einsteinium">Es</a><br/><sub>Einsteinium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>100</sup><br/><a href="#" title="Fermium">Fm</a><br/><sub>Fermium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>101</sup><br/><a href="#" title="Mendelevium">Md</a><br/><sub>Mendelevium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>102</sup><br/><a href="#" title="Nobelium">No</a><br/><sub>Nobelium</sub>
+            </td>
+
+            <td align="center" bgcolor="#00994C">
+                <sup>103</sup><br/><a href="#" title="Lawrencium">Lr</a><br/><sub>Lawrencium</sub>
+            </td>
+
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td><br/></td>
+        </tr>
+        <tr>
+            <td><br/></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td align="center" bgcolor="#3399FF">Halogen</td>
+            <td align="center" bgcolor="#FF007F">Noble<br/>Gas</td>
+            <td align="center" bgcolor="#FFFF66">Other<br/>Non-Metal</td>
+            <td align="center" bgcolor="#CCCC00">Alkali<br/>Metal</td>
+            <td align="center" bgcolor="#FFB266">Alkaline<br/>Earth<br/>Metal</td>
+            <td align="center" bgcolor="#66FFB2">Lanthanide</td>
+            <td align="center" bgcolor="#00994C">Actinide</td>
+            <td align="center" bgcolor="#FF99FF">Transition<br/>Metal</td>
+            <td align="center" bgcolor="#99CCFF">Post-<br/>Transition<br/>Metal</td>
+            <td align="center" bgcolor="#A0A0A0">Metalloid</td>
+        </tr>
+    </table>
+    <br/>
+
+    <div class="elements">
+        <div class="back"><i class='fas fa-arrow-left' style='font-size:24px'></i></div>
+
+        <div class="card middle">
+            <div class="front">
+                <img src="https://dl.dropbox.com/s/5sakjxdaot7ttnd/starspollute.gif?dl=0" alt="" />
+            </div>
+            <div class="bac">
+                <div class="middle">
+                    <div class="bac-content">
+                        <h3>All Elements</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="do">electronic configuration</div>
+    </div>
+    <div class="confg">
+        <div class="back"><i class='fas fa-arrow-left' style='font-size:24px'></i></div>
+        <div id="inputDiv">
+            <input id="inputNum" value="" placeholder="Enter num" type="number" min="1" max="118"><button id="inputButton" onclick="draw()">Go!</button>
+        </div>
+        <canvas id="canvas">
+
+        </canvas>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const inputNum = document.getElementById("inputNum");
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+
+        var x = canvas.width = window.innerWidth - 20;
+        var y = canvas.height = window.innerHeight - 20;
+
+        var atomicNumber;
+        var atomicTotal;
+
+        const sBlock = 2;
+        const pBlock = 6;
+        const dBlock = 10;
+        const fBlock = 14;
+
+        const s = 1;
+        const p = 2;
+        const d = 3;
+        const f = 4;
+
+        const sArray = [];
+        const pArray = [];
+        const dArray = [];
+        const fArray = [];
+
+        const configurationArray = [sBlock, sBlock, pBlock, sBlock, pBlock, sBlock, dBlock, pBlock, sBlock, dBlock, pBlock, sBlock, fBlock, dBlock, pBlock, sBlock, fBlock, dBlock, pBlock];
+        const shellArray = [1, 2, 2, 3, 3, 4, 3, 4, 5, 4, 5, 6, 4, 5, 6, 7, 5, 6, 7];
+        const fullShells = [2, 8, 18, 32, 32, 18, 8];
+        var electronsInShells = [];
+        var shellsArray = [];
+        const orbitalArray = [s, p, d, f];
+
+        const symbols = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te", "I", "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"];
+
+        const elementNames = ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminium", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Indium", "Tin", "Antimony", "Tellurium", "Iodine", "Xenon", "Caesium", "Barium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium", "Platinum", "Gold", "Mercury", "Thallium", "Lead", "Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", "Actinium", "Thorium", "Protactinium", "Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium", "Lawrencium", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", "Meitnerium", "Darmstadtium", "Roentgenium", "Corpernicium", "Nihonium", "Flerovium", "Moscovium", "Livermorium", "Tennessine", "Oganesson"];
+
+        window.addEventListener('resize', resizeCanvas, true);
+
+        function resizeCanvas(event) {
+
+            x = canvas.width = window.innerWidth - 20;
+            y = canvas.height = window.innerHeight - 40;
+
+            draw();
+        }
+
+        resizeCanvas();
+
+        draw();
+
+        function draw() {
+
+            if (atomicNumber == undefined) {
+
+                atomicNumber = Math.ceil(Math.random() * 118);
+
+            } else if (inputNum.value == "") {
+
+
+            } else if (inputNum.value < 1 || inputNum.value > 118) {
+
+                alert("Please enter a number between 1 and 118 inclusive");
+                return;
+
+            } else {
+
+                atomicNumber = Number(inputNum.value);
+
+            }
+
+            context.clearRect(0, 0, x, y);
+
+            atomicTotal = atomicNumber;
+
+            electronsInShells = [];
+            shellsArray = [];
+
+            configuration(atomicTotal);
+
+            context.beginPath();
+            context.fillStyle = "#DDDDDD";
+            context.arc(x / 2, y / 2, (17.5) + (0.08 * atomicNumber), 0, Math.PI * 2);
+            context.stroke();
+            context.fill();
+            context.closePath();
+
+            context.fillStyle = "black";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            context.font = 16 + (0.08 * atomicNumber) + "px Arial";
+            context.fillText("" + symbols[atomicNumber - 1], x / 2, y / 2);
+
+            context.fillStyle = "black";
+            context.textAlign = "left";
+            context.textBaseline = "hanging";
+            context.font = "16px Arial";
+            context.fillText("" + atomicNumber + ": " + elementNames[atomicNumber - 1], 0, 5);
+
+            context.fillStyle = "#FFFF00";
+
+            drawElectrons(atomicTotal);
+
+        }
+
+        function configuration(atomicNumber) {
+
+            for (let j = 0; j < configurationArray.length; j++) {
+
+                if (atomicNumber > 118) {
+
+                    console.log("Please enter a number between 1 an 118 inclusive");
+                    return;
+
+                } else if (atomicNumber > 0) {
+
+                    for (let k = 0; k < orbitalArray.length; k++) {
+
+                        const result = orbitalArray[k];
+
+                        if ((configurationArray[j] == sBlock) && (orbitalArray.indexOf(orbitalArray[k]) == 0)) {
+
+                            sArray.push(orbitalArray[k]);
+                            orbitalArray[k]++;
+                            if (atomicNumber < sBlock) {
+                                electronsInShells.push(atomicNumber);
+                            } else {
+                                electronsInShells.push(sBlock);
+                            }
+                            atomicNumber -= sBlock;
+                            break;
+                        } else if ((configurationArray[j] == pBlock) && (orbitalArray.indexOf(orbitalArray[k]) == 1)) {
+
+                            pArray.push(orbitalArray[k]);
+                            orbitalArray[k]++;
+                            if (atomicNumber < pBlock) {
+                                electronsInShells.push(atomicNumber);
+                            } else {
+                                electronsInShells.push(pBlock);
+                            }
+                            atomicNumber -= pBlock;
+                            break;
+                        } else if ((configurationArray[j] == dBlock) && (orbitalArray.indexOf(orbitalArray[k]) == 2)) {
+
+                            dArray.push(orbitalArray[k]);
+                            orbitalArray[k]++;
+                            if (atomicNumber < dBlock) {
+                                electronsInShells.push(atomicNumber);
+                            } else {
+                                electronsInShells.push(dBlock);
+                            }
+                            atomicNumber -= dBlock;
+                            break;
+                        } else if ((configurationArray[j] == fBlock) && (orbitalArray.indexOf(orbitalArray[k]) == 3)) {
+
+                            fArray.push(orbitalArray[k]);
+                            orbitalArray[k]++;
+                            if (atomicNumber < fBlock) {
+                                electronsInShells.push(atomicNumber);
+                            } else {
+                                electronsInShells.push(fBlock);
+                            }
+                            atomicNumber -= fBlock;
+                            break;
+                        }
+
+                    }
+
+                } else {
+                    break;
+                }
+
+            }
+
+        }
+
+        function drawElectrons(total) {
+
+            var counter = 1;
+            var tempTotal = total;
+
+            for (let i = 0; i < Math.max(...shellArray.slice(0, electronsInShells.length)); i++) {
+
+                shellsArray.push(0);
+
+            }
+
+            var counter = 1;
+            for (let i = 0; i < electronsInShells.length; i++) {
+
+                counter = shellArray[i];
+
+                shellsArray[counter - 1] += electronsInShells[i];
+
+            }
+
+            for (let i = 0; i < shellsArray.length; i++) {
+
+                var divisor;
+
+                if (total <= shellsArray[i]) {
+
+                    divisor = total;
+
+                } else {
+                    divisor = shellsArray[i];
+                }
+
+                context.beginPath(); // energy levels (i=0 = energy level 1) - These are the outlines of the shells
+                context.arc(x / 2, y / 2, (40 + 20 * i), 0, Math.PI * 2);
+                context.stroke();
+                context.closePath();
+
+                for (let j = 0; j < shellsArray[i]; j++) {
+
+                    if (total > 0) {
+
+                        context.beginPath();
+                        context.arc((x / 2) + (40 + 20 * i) * Math.cos(((j * (360 / divisor)) - 90) * Math.PI / 180), (y / 2) + (40 + 20 * i) * Math.sin(((j * (360 / divisor)) - 90) * Math.PI / 180), 6, 0, Math.PI * 2);
+                        context.stroke();
+                        context.fill();
+                        context.closePath();
+                        total--;
+
+                    } else {
+                        return;
+                    }
+                }
+
+            }
+
+            context.fillStyle = "black";
+            context.textAlign = "right";
+            context.textBaseline = "hanging";
+            context.font = "16px Arial";
+            context.fillText("" + shellsArray, x, 5);
+
+        }
+    </script>
+</body>
+
+</html>
